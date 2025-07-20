@@ -6,6 +6,7 @@ A simple interactive tool for searching and analyzing the Electronic Code of Fed
 ## 📁 Project Structure
 
 MyProject/
+
 ├── ecfr_chunks_all_titles.csv     # eCFR dataset (CSV format)
 
 ├── main.py                        # FastAPI backend (API routes)
