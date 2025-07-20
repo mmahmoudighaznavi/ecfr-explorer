@@ -35,7 +35,7 @@ MyProject/
 
 ```
 git clone https://github.com/mmahmoudighaznavi/ecfr-explorer.git
-cd your-repo-name
+cd ecfr-explorer
 ```
 
 ### Step 2: Create a virtual environment
