@@ -7,9 +7,13 @@ A simple interactive tool for searching and analyzing the Electronic Code of Fed
 
 MyProject/
 ├── ecfr_chunks_all_titles.csv     # eCFR dataset (CSV format)
+
 ├── main.py                        # FastAPI backend (API routes)
+
 ├── streamlit_app.py               # Streamlit frontend (user interface)
+
 ├── requirements.txt               # Python dependencies
+
 └── README.md                      # Project documentation
 
 
@@ -39,7 +43,7 @@ uvicorn main:app --reload
 ### Step 5: Run the frontend (Streamlit)
 
 streamlit run streamlit_app.py
-
+'''
 ---
 
 ## ⚙️ Requirements
