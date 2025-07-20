@@ -6,17 +6,39 @@ A simple interactive tool for searching and analyzing the Electronic Code of Fed
 ## 📁 Project Structure
 
 MyProject/
-├── backend/ # FastAPI backend service
-│ └── main.py # API routes to search and return word count stats
-├── frontend/ # Streamlit frontend app
-│ └── streamlit_app.py # User interface with interactive visualizations
-├── data/ # Folder containing the eCFR CSV dataset
-│ └── ecfr_chunks_all_titles.csv
-├── data_processing.py # Optional: helper scripts to clean/process data
-├── ecfr_app.py # (Optional) entry-point or test script
-├── ecfr_project.ipynb # (Optional) notebook for data exploration
-└── README.md # This documentation file
+│
+├── ecfr_chunks_all_titles.csv # eCFR dataset (CSV format)
+├── main.py # FastAPI backend (API routes)
+├── streamlit_app.py # Streamlit frontend (user interface)
+├── requirements.txt # Python dependencies
+├── README.md # This file
 
+
+---
+
+## 🔧 Getting Started
+
+### Step 1: Clone the repository
+
+```bash
+git clone https://github.com/your-username/your-repo-name.git
+cd your-repo-name
+
+### Step 2: Create a virtual environment
+python -m venv venv
+source venv/bin/activate       # On Windows use: venv\Scripts\activate
+
+### Step 3: Install dependencies
+pip install -r requirements.txt
+
+pip install fastapi uvicorn streamlit pandas plotly requests
+
+### Step 4: Run the backend (FastAPI)
+uvicorn main:app --reload
+
+### Step 5: Run the frontend (Streamlit)
+
+streamlit run streamlit_app.py
 
 ---
 
@@ -24,6 +46,8 @@ MyProject/
 
 Make sure Python 3.8+ is installed. Then install dependencies:
 
-```bash
-pip install fastapi uvicorn streamlit pandas plotly requests
+Notes
+The dataset file (ecfr_chunks_all_titles.csv) should be in the root directory.
+
+Make sure both backend and frontend run simultaneously for full functionality.
 
