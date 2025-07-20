@@ -2,6 +2,14 @@
 
 A simple interactive tool for searching and analyzing the Electronic Code of Federal Regulations (eCFR), built with FastAPI and Streamlit.
 ---
+## ⚙️ Requirements
+
+Make sure Python 3.8+ is installed. Then install dependencies:
+
+Notes
+The dataset file (ecfr_chunks_all_titles.csv) should be in the root directory.
+
+Make sure both backend and frontend run simultaneously for full functionality.
 
 ## 📁 Project Structure
 
@@ -50,12 +58,4 @@ uvicorn main:app --reload
 streamlit run streamlit_app.py
 
 
-## ⚙️ Requirements
-
-Make sure Python 3.8+ is installed. Then install dependencies:
-
-Notes
-The dataset file (ecfr_chunks_all_titles.csv) should be in the root directory.
-
-Make sure both backend and frontend run simultaneously for full functionality.
 
