@@ -50,6 +50,8 @@ uvicorn main:app --reload
 streamlit run streamlit_app.py
 '''
 ---
+
+
 ## ⚙️ Requirements
 
 Make sure Python 3.8+ is installed. Then install dependencies:
